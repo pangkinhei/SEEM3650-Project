@@ -80,23 +80,3 @@ plt.title('Actual AQHI vs Predicted AQHI')
 plt.xlabel('Actual AQHI')
 plt.ylabel('Predicted AQHI')
 plt.show()
-
-# Visualize the relationship between predicted AQI and stations
-plt.figure(figsize=(12, 8))
-plt.scatter(data['STATION'], y_pred_aqi, color='red')
-plt.title('Predicted AQI vs Station')
-plt.xlabel('Station')
-plt.ylabel('Predicted AQI')
-plt.xticks(rotation=45)
-plt.grid(True)
-plt.show()
-
-# Visualize the relationship between predicted AQHI and stations
-plt.figure(figsize=(12, 8))
-plt.scatter(data['STATION'], y_pred_aqhi, color='orange')
-plt.title('Predicted AQHI vs Station')
-plt.xlabel('Station')
-plt.ylabel('Predicted AQHI')
-plt.xticks(rotation=45)
-plt.grid(True)
-plt.show()
