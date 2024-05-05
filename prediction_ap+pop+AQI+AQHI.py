@@ -22,12 +22,10 @@ data.replace(to_replace=r'[^0-9.-]+', value='', regex=True, inplace=True)
 # Step 2: Feature Engineering
 # For AQI prediction, select relevant features
 X_aqi = data[['CO', 'FSP', 'NO2', 'NOX', 'O3', 'RSP', 'SO2', '2019 population']]
-X_aqi = pd.get_dummies(data['STATION']).join(X_aqi)
 y_aqi = data['AQI']
 
 # For AQHI prediction, select relevant features
 X_aqhi = data[['FSP', 'NOX', 'SO2', '2019 population']]
-X_aqhi = pd.get_dummies(data['STATION']).join(X_aqhi)
 y_aqhi = data['AQHI']
 
 # Convert data to numeric format
