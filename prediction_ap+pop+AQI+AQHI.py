@@ -57,6 +57,7 @@ y_pred_aqhi = model_aqhi.predict(X_test_aqhi)
 mse_aqhi = mean_squared_error(y_test_aqhi, y_pred_aqhi)
 print("Mean Squared Error for AQHI Prediction:", mse_aqhi)
 
+
 # Step 5: Data Visualization
 # Visualize the relationship between actual and predicted AQI values
 plt.figure(figsize=(10, 6))
@@ -73,3 +74,4 @@ plt.title('Actual AQHI vs Predicted AQHI')
 plt.xlabel('Actual AQHI')
 plt.ylabel('Predicted AQHI')
 plt.show()
+
