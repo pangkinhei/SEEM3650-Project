@@ -57,11 +57,6 @@ y_pred_aqhi = model_aqhi.predict(X_test_aqhi)
 mse_aqhi = mean_squared_error(y_test_aqhi, y_pred_aqhi)
 print("Mean Squared Error for AQHI Prediction:", mse_aqhi)
 
-#print size of station  
-print("Size of station:", X_aqi.shape[1])
-#print size of aqi
-print("Size of aqi:", y_aqi.shape[0])
-
 # Step 5: Data Visualization
 # Visualize the relationship between actual and predicted AQI values
 plt.figure(figsize=(10, 6))
